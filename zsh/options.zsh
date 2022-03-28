@@ -11,8 +11,9 @@ unsetopt correct_all
 unsetopt correct
 DISABLE_CORRECTION="true"
 
+
+# don't like zsh output '%' when no newline for a command
+unsetopt prompt_cr prompt_sp
+export PROMPT_EOL_MARK=""
+
 # setopt prompt_subst(I use others' file of prompt)
-
-
-
-
